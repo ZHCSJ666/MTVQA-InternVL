@@ -6,7 +6,7 @@ echo "🚀 正在启动 InternVL2.5-1B 的微调..."
 
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
 swift sft \
-  --model /ltstorage/home/3jiang/humanwithlove/models/InternVL2_5-1B \
+  --model /ltstorage/home/3jiang/humanwithlove/models/InternVL2_5-8B \
   --train_type lora \
   --dataset /ltstorage/home/3jiang/humanwithlove/MTVQA/mtvqa_train_qa_with_ocr_top50.swift.jsonl \
   --output_dir /ltstorage/home/3jiang/humanwithlove/Weitiao/internvl2_5-1b-mtvqa-lora \
