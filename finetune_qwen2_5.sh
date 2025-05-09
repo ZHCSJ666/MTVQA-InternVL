@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# 微调 InternVL2.5-1B 模型
+# 微调 InternVL2.5-8B 模型
 
-echo "🚀 正在启动 InternVL2.5-1B 的微调..."
+echo "🚀 正在启动 InternVL2.5-8B 的微调..."
 
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
 swift sft \
