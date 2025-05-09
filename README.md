@@ -11,11 +11,10 @@ python datadownload.py
 
 
 微调Internvl命令：
-chmod +x finetune_internvl3.sh
-bash finetune_internvl3.sh
+chmod +x finetune_qwen2_5.sh && bash finetune_qwen2_5.sh
+
 
 
 
 微调Qwen命令：
-chmod +x finetune_qwen2_5.sh
-bash finetune_qwen2_5.sh
+chmod +x finetune_qwen2_5.sh && bash finetune_qwen2_5.sh
