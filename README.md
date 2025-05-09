@@ -29,6 +29,7 @@ swift sft \
   --save_steps 100 --logging_steps 10 \
   --lr_scheduler_type cosine \
   --torch_dtype bfloat16 \
+  --freeze_vit true
   --dataloader_num_workers 4 \
   --gradient_checkpointing true \
   --weight_decay 0.1 \
