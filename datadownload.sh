@@ -4,8 +4,8 @@
 mkdir -p MTVQA-InternVL/Data
 
 # 下载 zip 文件（指定文件名）
-gdown --id 1u09EVNVj17ws_AHEB7Y0eZiSPseTJUTx -O MTVQA-InternVL/Data/MTVQA.zip
+gdown --id 1u09EVNVj17ws_AHEB7Y0eZiSPseTJUTx -O mnt/workspace/xintong/jlq/dataset/Tufan/MTVQA.zip
 
 # 解压 zip 到同一目录
-unzip -o MTVQA-InternVL/Data/MTVQA.zip -d MTVQA/Data
+unzip -o mnt/workspace/xintong/jlq/dataset/Tufan/MTVQA.zip -d mnt/workspace/xintong/jlq/dataset/Tufan
 
