@@ -4,12 +4,12 @@
 
 echo "🚀 正在启动 InternVL2.5-8B 的微调..."
 
-CUDA_VISIBLE_DEVICES=1,2 \
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
 swift sft \
   --model Qwen/Qwen2.5-VL-7B-Instruct \
   --train_type lora \
-  --dataset Internvl-MTVQmtvqa_train_qa_pair.jsonl \
-  --output_dir Internvl-MTVQA/LoRA \
+  --dataset mnt/workspace/xintong/jlq/MTVOA-InternvL/mtvqa_train_qa_pair_new.jsonl
+  --output_dir mnt/workspace/xintong/jlq/All_results/Tufan/qwen25_noocr \
   --num_train_epochs 3 \
   --per_device_train_batch_size 1 \
   --per_device_eval_batch_size 1 \
