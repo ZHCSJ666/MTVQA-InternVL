@@ -1,22 +1,11 @@
-from datasets import load_dataset
-from PIL import Image
-from pathlib import Path
+#!/bin/bash
 
-# 设置输出图像目录（相对路径）
-output_dir = Path("mtvqa_train_samples")
-output_dir.mkdir(parents=True, exist_ok=True)
+# 创建目标目录
+mkdir -p MTVQA-InternVL/Data
 
-# 下载数据集（默认是 split='train'）
-dataset = load_dataset("ZHCSJ/MTVQA-dataset", split="train")
+# 下载 zip 文件（指定文件名）
+gdown --id 1u09EVNVj17ws_AHEB7Y0eZiSPseTJUTx -O MTVQA-InternVL/Data/MTVQA.zip
 
-# 遍历并保存图片
-for sample in dataset:
-    img: Image.Image = sample["image"]
-    img_id = sample["id"]  # 如 "AR_0", "DE_1" 等
-    out_path = output_dir / f"{img_id}.png"
-    try:
-        img.convert("RGB").save(out_path, format="PNG")
-    except Exception as e:
-        print(f"❌ Error saving {img_id}: {e}")
+# 解压 zip 到同一目录
+unzip -o MTVQA-InternVL/Data/MTVQA.zip -d MTVQA/Data
 
-print(f"✅ 所有图片已保存到：{output_dir}")
