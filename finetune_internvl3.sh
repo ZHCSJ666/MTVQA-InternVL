@@ -4,7 +4,7 @@
 
 echo "🚀 正在启动 InternVL3-8B LoRA 微调..."
 
-CUDA_VISIBLE_DEVICES=1,2 \
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
 swift sft \
   --model OpenGVLab/InternVL3-8B \
   --model_type internvl3 \
