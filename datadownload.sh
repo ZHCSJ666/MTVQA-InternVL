@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 创建目标目录
-mkdir -p MTVQA-InternVL/Data
+mkdir -p mnt/workspace/xintong/jlq/dataset/Tufan
 
 # 下载 zip 文件（指定文件名）
 gdown --id 1u09EVNVj17ws_AHEB7Y0eZiSPseTJUTx -O mnt/workspace/xintong/jlq/dataset/Tufan/MTVQA.zip
