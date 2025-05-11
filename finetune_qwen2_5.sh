@@ -13,7 +13,7 @@ else
   exit 1
 fi
 
-echo "🚀 正在启动 InternVL2.5-8B 的微调..."
+echo "🚀 正在启动 Qwen 的微调..."
 
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 \
 swift sft \
