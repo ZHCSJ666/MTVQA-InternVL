@@ -12,3 +12,15 @@
  第三步：
  conda activate jlq_swift
 
+
+ 第四步：微调internvl
+ bash finetune_internvl3.sh
+
+
+ 第五步：微调qwen
+ bahs finetune_qwen2_5.sh
+
+
+
+ 得到的所有结果存储在jlq/ALL_results/MTVQA中
+
