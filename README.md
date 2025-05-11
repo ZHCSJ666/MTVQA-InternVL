@@ -6,11 +6,11 @@
 
 
  第二步：微调internvl
- bash finetune_internvl3.sh
+ 'bash finetune_internvl3.sh'
 
 
  第三步：微调qwen
- bahs finetune_qwen2_5.sh
+ 'bash finetune_qwen2_5.sh'
 
 
 
