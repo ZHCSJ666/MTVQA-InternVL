@@ -4,16 +4,18 @@
   `conda env create -f environment.yaml `
  新环境的名字是 `jlq_swift `
 
+第二步：`conda activate jlq_swift`
 
-第一点五步：下载并且加压数据
+
+第三步：下载并且加压数据
 `python data.py`
 
- 第二步：微调internvl
-  `bash finetune_internvl3.sh `
+第四步：微调internvl_noocr
+  `bash finetune_internvl3_noocr.sh `
 
 
- 第三步：微调qwen
-  `bash finetune_qwen2_5.sh `
+第五步：微调internvl_withocr
+  `bash finetune_internvl3_withocr.sh `
 
 
 
