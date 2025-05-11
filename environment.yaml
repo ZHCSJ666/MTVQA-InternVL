@@ -1,4 +1,4 @@
-name: swift
+name: jlq_swift
 channels:
   - defaults
   - https://repo.anaconda.com/pkgs/main
@@ -186,4 +186,3 @@ dependencies:
       - yarl==1.20.0
       - zipp==3.21.0
       - zstandard==0.23.0
-prefix: /ltstorage/home/3jiang/miniconda3/envs/swift
