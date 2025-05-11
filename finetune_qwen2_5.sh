@@ -1,6 +1,17 @@
 #!/bin/bash
 
-# 微调 InternVL2.5-8B 模型
+# 激活 Conda 环境
+echo "🔄 正在切换到 Conda 环境 jlq_swift..."
+eval "$(conda shell.bash hook)"
+conda activate jlq_swift
+
+# 检查 conda 环境是否激活成功
+if [[ "$CONDA_DEFAULT_ENV" == "jlq_swift" ]]; then
+  echo "✅ Conda 环境 jlq_swift 已成功激活！"
+else
+  echo "❌ Conda 环境激活失败！当前环境为：$CONDA_DEFAULT_ENV"
+  exit 1
+fi
 
 echo "🚀 正在启动 InternVL2.5-8B 的微调..."
 
