@@ -5,6 +5,9 @@
  新环境的名字是 `jlq_swift `
 
 
+第一点五步：下载并且加压数据
+`python data.py`
+
  第二步：微调internvl
   `bash finetune_internvl3.sh `
 
