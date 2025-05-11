@@ -1,8 +1,8 @@
 # MTVQA 微调项目说明
 
  第一步：
- conda env create -f environment.yaml
- 新环境的名字是jlq_swift
+  `conda env create -f environment.yaml `
+ 新环境的名字是 `jlq_swift `
 
 
  第二步：微调internvl
@@ -14,5 +14,5 @@
 
 
 
- 得到的所有结果存储在jlq/ALL_results/MTVQA中
+ 得到的所有结果存储在 `jlq/ALL_results/MTVQA `中
 
