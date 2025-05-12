@@ -21,7 +21,7 @@ swift sft \
   --model OpenGVLab/InternVL3-8B \
   --model_type internvl3 \
   --train_type lora \
-  --dataset /mnt/workspace/xintong/jlq/MTVOA-InternvL/mtvqa_train_noocr.jsonl \
+  --dataset /mnt/workspace/xintong/jlq/MTVQA-InternVL/mtvqa_train_noocr.jsonl \
   --torch_dtype bfloat16 \
   --num_train_epochs 3 \
   --per_device_train_batch_size 1 \
